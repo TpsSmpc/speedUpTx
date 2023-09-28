@@ -1,0 +1,18 @@
+{
+	"speed_up": [
+		{
+			"keystore": "./config/smpc_k",
+			"networks": [
+				{
+					"rpc": "https://mainnet.infura.io/v3/3f8b4373a4a943bf8b9c635fba90ee78",
+					"gas_price_upper": 70
+				},
+				{
+					"rpc": "https://json-rpc.evm.shimmer.network",
+					"gas_price_upper": 50
+				}
+			]
+		}
+	],
+	"check_pending_time": 5
+}
