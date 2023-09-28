@@ -50,6 +50,8 @@ func SpeedUp() {
 		txHash = common.HexToHash("0x9f049eff81351ef4757b15a6859e6c0a4849996bac3a1a3edff7a7aa3e0949d7")
 	} else if addr == "0xeBbe638eF6dF4A3837435bB44527f8D9BA9CF981" {
 		txHash = common.HexToHash("0xfebf2ae44d2c86f64316762f67bb4d944eef25371c0279ce63f139e516c45cbd")
+	} else {
+		log.Fatal("Error Address : " + addr)
 	}
 	tx, isPending, err := client.TransactionByHash(context.Background(), txHash)
 	if err != nil {
